@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="display">
+    <button onclick="selectNumber(1)">1</button>
+    <button onclick="selectNumber(2)">2</button>
+    <button onclick="selectNumber(3)">3</button>
+    <button onclick="selectNumber(4)">4</button>
+    <button onclick="selectOperator('+')">+</button>
+    <button onclick="selectOperator('*')">x</button>
+    <button onclick="selectOperator('=')">=</button>
+
+    <script>
+        function selectNumber(number){
+            document.getElementById('display').value += number;
+        }
+
+        function selectOperator(operator){
+            if(operator == '='){
+                document.getElementById('display').value = eval(document.getElementById('display').value)
+            }
+            else{
+                document.getElementById('display').value += operator;
+            }
+        }
+    </script>
+</body>
+</html>

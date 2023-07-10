@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="pw" onkeydown="getCharacter()">
+    <input type="password" onkeydown="getCharacter_2(event)">
+    <!-- <input type="password" id="pw"> -->
+    <p id="p_1"></p>
+
+    <script>
+        document.getElementById('pw').addEventListener('keydown', function(event){
+            console.log(event.key);
+            console.log(event.keyCode);
+            document.getElementById('p_1').innerText = event.target.value;
+        })
+        function getCharacter(){
+            // console.log(event.target.value);
+            document.getElementById('p_1').innerText = document.getElementById('pw').value;
+        }
+        function getCharacter_2(event){
+            // console.log(event.target.value);
+            document.getElementById('p_1').innerText = event.target.value;
+        }
+
+        // document.addEventListener("keydown", function(event) {
+        //     document.getElementById('p_1').innerText += event.key;
+        //     console.log(event.key);
+        // })
+    </script>
+</body>
+</html>

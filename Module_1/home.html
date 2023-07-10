@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Say Hello</button>
+    <input type="checkbox" onchange="providerPemission(event)">
+
+    <script>
+        function say() {
+            alert('Hello các bạn')
+        }
+        function providerPemission(event) {
+
+            if (event.target.checked == true) {
+                document.getElementById('btn').addEventListener('click', say)
+            }
+            else {
+                document.getElementById('btn').removeEventListener('click', say)
+            }
+        }
+    </script>
+</body>
+
+</html>
