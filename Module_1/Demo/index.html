@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="container">
+        <div class="create-bear">
+            <div class="form-group">
+                <label class="form-label">Product Name</label>
+                <input type="hidden" id="beerId" value="0">
+                <input id="productName" type="text" class="form-control w-50">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Product Photo</label>
+                <input id="productPhoto" type="url" class="form-control w-50">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Price</label>
+                <input id="price" type="text" class="form-control w-50">
+            </div>
+            <div class="row">
+                <button id="btnCreate" class="btn btn-danger me-1" onclick="createBeer()">Create</button>
+                <button id="btnSave" class="btn btn-warning me-1 d-none" onclick="saveBeer()">Save</button>
+                <button class="btn btn-dark" onclick="clearFields()">Cancel</button>
+            </div>
+        </div>
+        <div class="display-beer mt-2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Product Name</th>
+                        <th>Product Photo</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbBeer">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="product.js"></script>
+</body>
+</html>

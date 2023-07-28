@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.create-bear {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group>.form-label {
+    padding: 5px 0px;
+}
+
+.form-group>.form-control {
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+.btn-warning {
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+.btn-warning:hover {
+    background-color: rgb(255, 165, 0, .8);
+}
+
+.btn-dark {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.btn-dark:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.me-1 {
+    margin-right: 5px;
+}
+
+.mt-2{
+    margin-top: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table,
+.table tr,
+.table th,
+.table td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.table>thead>tr>th{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.table>tbody>tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+.product-photo {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.d-none{
+    display: none;
+}
